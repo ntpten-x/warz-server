@@ -3815,9 +3815,9 @@ void obj_ServerPlayer::OnNetPacket(const PKT_C2S_CraftItem_s& n)
 	int SlotTo = GetBackpackSlotForItem(craftItm);
 	if(SlotTo == -1)
 	{
-		PKT_S2C_CraftAns_s n;
-		n.ans = 0;
-		gServerLogic.p2pSendToPeer(peerId_, this, &n, sizeof(n));
+		PKT_S2C_CraftAns_s craftAns;
+		craftAns.ans = 0;
+		gServerLogic.p2pSendToPeer(peerId_, this, &craftAns, sizeof(craftAns));
 		return;
 	}
 	
@@ -3877,9 +3877,9 @@ void obj_ServerPlayer::OnNetPacket(const PKT_C2S_CraftItem_s& n)
 	// craft
 	AddItemToBackpackSlot(SlotTo, craftItm);
 
-	PKT_S2C_CraftAns_s n;
-	n.ans = 1;
-	gServerLogic.p2pSendToPeer(peerId_, this, &n, sizeof(n));
+	PKT_S2C_CraftAns_s craftAns;
+	craftAns.ans = 1;
+	gServerLogic.p2pSendToPeer(peerId_, this, &craftAns, sizeof(craftAns));
 
 	if(resN.ResMetal || resN.ResStone || resN.ResWood)
 		gServerLogic.p2pSendToPeer(peerId_, this, &resN, sizeof(resN));

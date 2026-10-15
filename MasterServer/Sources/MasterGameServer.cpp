@@ -1,4 +1,5 @@
 #include "r3dPCH.h"
+#include "ChilkatCompat.h"
 #include "r3d.h"
 #include "r3dNetwork.h"
 #include <shellapi.h>
@@ -941,12 +942,12 @@ DWORD __stdcall CMasterGameServer::ItemsDbUpdateThread(LPVOID in)
     r3dOutToLog("ItemsDBUpdateThread: started\n");
 
     CkHttp http;
-    int success = http.UnlockComponent("ARKTOSHttp_decCLPWFQXmU");
+    int success = Chilkat_UnlockHttp(http);
     if(success != 1) 
       r3dError("Internal error");
 
     CkHttpRequest req;
-    req.UsePost();
+    req.put_HttpVerb("POST");
     req.put_Path("/php/api_getItemsDB.php");
     req.AddParam("serverkey", "CfFkqQWjfgksYG56893GDhjfjZ20");
 

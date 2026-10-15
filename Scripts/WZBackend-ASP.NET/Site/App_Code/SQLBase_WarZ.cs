@@ -20,9 +20,11 @@ public class SQLBase
 
     public SQLBase()
     {
+        // Local private server: Docker SQL Server (warz-mssql) + SQL auth
+        // Start: C:\warzlocal\docker\sql\scripts\up.ps1  (data volume: warz_mssql_data)
         server = "127.0.0.1,1433";
-        user = "bn_api_user";
-        pass = "g54vxca5Ez";
+        user = "sa";
+        pass = "WarZ_Local_2024!";
     }
 
     ~SQLBase()
@@ -35,18 +37,36 @@ public class SQLBase
         if (pass.Length == 0)
             throw new ArgumentException("no password in sql");
 
-        string str = String.Format(
-            "user id={0};" +
-            "password={1};" + 
-            "server={2};" +
-            "database={3};" +
-            "Trusted_Connection=false;" +
-            "connection timeout=30",
-            user,
-            pass,
-            server,
-            workdb
-            );
+        string str;
+        if (string.IsNullOrEmpty(user))
+        {
+            str = String.Format(
+                "server={0};" +
+                "database={1};" +
+                "Trusted_Connection=true;" +
+                "TrustServerCertificate=true;" +
+                "connection timeout=30",
+                server,
+                workdb
+                );
+        }
+        else
+        {
+            str = String.Format(
+                "user id={0};" +
+                "password={1};" +
+                "server={2};" +
+                "database={3};" +
+                "Trusted_Connection=false;" +
+                "TrustServerCertificate=true;" +
+                "Encrypt=false;" +
+                "connection timeout=30",
+                user,
+                pass,
+                server,
+                workdb
+                );
+        }
 
         try
         {

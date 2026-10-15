@@ -1,0 +1,32 @@
+# WarZ local SQL Server — data persists in Docker volume `warz_mssql_data`
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: warz-mssql
+    hostname: warz-mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
+      MSSQL_PID: "Developer"
+    ports:
+      - "${MSSQL_PORT:-1433}:1433"
+    volumes:
+      - warz_mssql_data:/var/opt/mssql
+      - ../../WarZ-dbo.sql:/seed/WarZ-dbo.sql:ro
+      - ../../BreezeNet-dbo.sql:/seed/BreezeNet-dbo.sql:ro
+      - ./init:/init:ro
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -C -Q \"SELECT 1\" || exit 1",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+    restart: unless-stopped
+
+volumes:
+  warz_mssql_data:
+    name: warz_mssql_data

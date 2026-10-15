@@ -1,31 +1,16 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Eternity", "..\..\src\Eternity\Eternity.vcproj", "{3D51BE84-6441-4AC7-A73F-587C6B36DDAF}"
-	ProjectSection(ProjectDependencies) = postProject
-		{143F9B67-C223-4F2D-B8F9-B644CA710CA6} = {143F9B67-C223-4F2D-B8F9-B644CA710CA6}
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.11.12306.390 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Eternity", "..\..\src\Eternity\Eternity.vcxproj", "{3D51BE84-6441-4AC7-A73F-587C6B36DDAF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WarZ Game Server", "WO_GameServer\WO_GameServer.vcproj", "{32AD275B-9E09-431E-94D7-41780F91B239}"
-	ProjectSection(ProjectDependencies) = postProject
-		{143F9B67-C223-4F2D-B8F9-B644CA710CA6} = {143F9B67-C223-4F2D-B8F9-B644CA710CA6}
-		{3D51BE84-6441-4AC7-A73F-587C6B36DDAF} = {3D51BE84-6441-4AC7-A73F-587C6B36DDAF}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WarZ Game Server", "WO_GameServer\WO_GameServer.vcxproj", "{32AD275B-9E09-431E-94D7-41780F91B239}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MasterServer", "MasterServer\MasterServer.vcproj", "{32AD275B-9E08-431E-94D7-42780F91B239}"
-	ProjectSection(ProjectDependencies) = postProject
-		{32AD275B-2E08-431E-94D7-42781F91B239} = {32AD275B-2E08-431E-94D7-42781F91B239}
-		{32AD275B-9E09-431E-94D7-41780F91B239} = {32AD275B-9E09-431E-94D7-41780F91B239}
-		{143F9B67-C223-4F2D-B8F9-B644CA710CA6} = {143F9B67-C223-4F2D-B8F9-B644CA710CA6}
-		{3D51BE84-6441-4AC7-A73F-587C6B36DDAF} = {3D51BE84-6441-4AC7-A73F-587C6B36DDAF}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MasterServer", "MasterServer\MasterServer.vcxproj", "{32AD275B-9E08-431E-94D7-42780F91B239}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SupervisorServer", "SupervisorServer\SupervisorServer.vcproj", "{32AD275B-2E08-431E-94D7-42781F91B239}"
-	ProjectSection(ProjectDependencies) = postProject
-		{143F9B67-C223-4F2D-B8F9-B644CA710CA6} = {143F9B67-C223-4F2D-B8F9-B644CA710CA6}
-		{3D51BE84-6441-4AC7-A73F-587C6B36DDAF} = {3D51BE84-6441-4AC7-A73F-587C6B36DDAF}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SupervisorServer", "SupervisorServer\SupervisorServer.vcxproj", "{32AD275B-2E08-431E-94D7-42781F91B239}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RakNet", "..\..\src\External\RakNet\RakNet.vcproj", "{143F9B67-C223-4F2D-B8F9-B644CA710CA6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RakNet", "..\..\src\External\RakNet\RakNet.vcxproj", "{143F9B67-C223-4F2D-B8F9-B644CA710CA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,5 +41,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E1BF7C7-4724-4E63-8EF6-271E46E011FA}
 	EndGlobalSection
 EndGlobal

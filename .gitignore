@@ -22,3 +22,15 @@ _ReSharper*/
 BuildLog.htm
 *.idb
 *.pdb
+# Local build / IDE / backups
+.vs/
+**/Final/
+**/Release/
+**/Release_Server/
+*.bak
+*.bak_*
+*.vcxproj.user
+UpgradeLog.htm
+Backup/
+External/
+docker/sql/.env

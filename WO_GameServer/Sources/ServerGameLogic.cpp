@@ -2,6 +2,9 @@
 #include "r3d.h"
 #include "GameLevel.h"
 
+// Local private server: no GameBlocks anti-cheat SDK
+#undef ENABLE_GAMEBLOCKS
+
 #include "ServerGameLogic.h"
 #include "MasterServerLogic.h"
 #include "GameObjects/ObjManag.h"

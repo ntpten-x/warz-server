@@ -1,4 +1,5 @@
 #include "r3dPCH.h"
+#include "ChilkatCompat.h"
 #include "r3d.h"
 #include "r3dNetwork.h"
 
@@ -963,19 +964,18 @@ void CJobBackpackToInventory::OnSuccess()
 int CJobGetLootboxData::Exec()
 {
 	CkHttp http;
-	int success = http.UnlockComponent("ARKTOSHttp_decCLPWFQXmU");
+	int success = Chilkat_UnlockHttp(http);
 	if (success != 1) 
 		r3dError("Internal error!!!");
 
 	CkHttpRequest req;
-	req.UsePost();
-	req.put_Path("/WarZ/api/php/api_GetLootBoxConfig.php");
+	req.put_HttpVerb("POST");
+	req.put_Path("/php/api_GetLootBoxConfig.php");
 	req.AddParam("serverkey", "Fg5jaBgj3uy3ja");
 
-	// if api on localhost need to grab lootboxes from actual server
 	const char* api_ip = g_api_ip->GetString();
-	if(strcmp(api_ip, "localhost") == 0) api_ip = "127.0.0.1";
-	CkHttpResponse* resp = http.SynchronousRequest(api_ip, 80, false, req);
+	extern int gDomainPort;
+	CkHttpResponse* resp = http.SynchronousRequest(api_ip, gDomainPort, false, req);
 	if(!resp)
 	{
 		r3dOutToLog("!!! timeout getting lootbox db\n");
@@ -984,7 +984,7 @@ int CJobGetLootboxData::Exec()
 			
 	// we can't use getBosyStr() because it'll fuckup characters inside UTF-8 xml
 	CkByteData bodyData;
-	resp->get_Body(bodyData);
+	Chilkat_GetBody(resp, bodyData);
 	delete resp;
 		
 	// note, not _inplace function, fmlFile should have it own buffer

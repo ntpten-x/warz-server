@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="2: Common">
+      <UniqueIdentifier>{b383fc2a-0201-4158-abc2-be94123084fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2: Common\Core">
+      <UniqueIdentifier>{01c929f9-3e19-4ccd-ae5d-21e44c1e823c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1: Engine">
+      <UniqueIdentifier>{b160abc6-fa90-413f-b22b-67aa46d28477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1: Engine\GameObjects">
+      <UniqueIdentifier>{c042705f-5b63-4bd9-bb3b-408e4e5dd9b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1: Engine\GameObjects\PhysX">
+      <UniqueIdentifier>{4126c70c-0e84-4f33-b4ee-a4ab6ab64b98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1: Engine\TrueNature">
+      <UniqueIdentifier>{d35d5283-ace8-43b7-89ad-576b3c98752f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1: Engine\GameEngine_AI">
+      <UniqueIdentifier>{bf6c7d27-d7a8-4383-923d-ae6cc6a02b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1: Engine\GameEngine_AI\AutodeskNav">
+      <UniqueIdentifier>{1253fde0-6922-4679-afc0-9f0b9a20b49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server">
+      <UniqueIdentifier>{867ce4d6-b85c-47dc-967b-d653294c510e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\GameObjects Code">
+      <UniqueIdentifier>{b4b855f7-b14b-492c-85cf-1d6403983dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\GameObjects Code\from Client">
+      <UniqueIdentifier>{71aa00e6-f88e-4509-a43b-ecb8033126c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\GameObjects Code\Zombies">
+      <UniqueIdentifier>{9ec8e969-2edb-4dbd-a042-dd3f1e3655d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\GameObjects Code\Missions">
+      <UniqueIdentifier>{580541ea-51f5-4d11-b90f-b96c60a7cc62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\GameObjects Code\Vehicles">
+      <UniqueIdentifier>{4c0889ac-0d22-4d2b-9d4f-c366a603ee6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\from Client">
+      <UniqueIdentifier>{eeded212-f198-4f0b-b44b-7591dd01dd18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\ServerWeapons">
+      <UniqueIdentifier>{bedb49d8-01b0-4de7-a067-657ea5dc3fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\ServerWeapons\Client">
+      <UniqueIdentifier>{459374ca-46ad-41a3-a47a-e9cd93ef6af0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\Backend">
+      <UniqueIdentifier>{2a039f41-afc1-48f5-9f41-799d7f16693c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\collections">
+      <UniqueIdentifier>{743f8af8-4b40-4eed-8e12-6c85b66dd7f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3: Server\PunkBuster">
+      <UniqueIdentifier>{67f52f85-4042-49dc-9930-f833462df520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="some_tempcrap">
+      <UniqueIdentifier>{569b8ad0-300c-455e-83df-e6c49bd763bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SOURCES\r3dPCH.cpp">
+      <Filter>2: Common\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\AObject.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\GameLevel.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\GameLevel_IO.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\GameObj.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\obj_Mesh.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\ObjManag.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\PhysObj.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\PhysXWorld.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\sceneBox.cpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\PhysXRepXHelpers.cpp">
+      <Filter>1: Engine\GameObjects\PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\TrueNature\ITerrain.cpp">
+      <Filter>1: Engine\TrueNature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\TrueNature2\Terrain2.cpp">
+      <Filter>1: Engine\TrueNature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\TrueNature2\Terrain3.cpp">
+      <Filter>1: Engine\TrueNature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\AI_Brain.cpp">
+      <Filter>1: Engine\GameEngine_AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\AI_Tactics.cpp">
+      <Filter>1: Engine\GameEngine_AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\NavGenerationHelpers.cpp">
+      <Filter>1: Engine\GameEngine_AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\NavRegionManager.cpp">
+      <Filter>1: Engine\GameEngine_AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskCustomBridges.cpp">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskNavAgent.cpp">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskNavAvoidanceFilter.cpp">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskNavMesh.cpp">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskNavProfile.cpp">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Async_ServerObjects.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Async_ServerState.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AsyncFuncs.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\KeepAliveReporter.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\MasterServerLogic.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\NetworkHelper.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ServerGame.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ServerGameLogic.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ServerMain.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MasterServer\Sources\SrvCrashHandler.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\TeamSpeakServer.cpp">
+      <Filter>3: Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Gameplay\obj_NoClipBox.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerBarricade.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerBuilding.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerDoor.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerFarmBlock.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerGravestone.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerGrenade.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerItemSpawnPoint.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerLightMesh.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerLockbox.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerMissionArea.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerNPC.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerPlayer.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerPlayerSpawnPoint.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerPostBox.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerRepairBench.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\obj_ServerUAV.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\ServerDummyObjects.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\sobj_AirDropSpawn.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\sobj_DroppedItem.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\sobj_Note.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\sobj_SpawnedItem.cpp">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Gameplay\BaseItemSpawnPoint.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Gameplay\BasePlayerSpawnPoint.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\DebugHelpers.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\DecalChief.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\Lake.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\MaterialTypes.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\obj_Prefab.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Nature\obj_Terrain.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\PrefabManager.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\water.cpp">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\WaterPlane.CPP">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Zombies\sobj_Zombie.cpp">
+      <Filter>3: Server\GameObjects Code\Zombies</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Zombies\sobj_ZombieSpawn.cpp">
+      <Filter>3: Server\GameObjects Code\Zombies</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Zombies\ZombieNavAgent.cpp">
+      <Filter>3: Server\GameObjects Code\Zombies</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\MissionActions.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\MissionActionsData.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\MissionCommands.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\MissionManager.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\MissionProgress.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\MissionRewards.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\MissionTimer.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\MissionTrigger.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Missions\obj_ServerMissionStateObject.cpp">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Gameplay\BaseVehicleSpawnPoint.cpp">
+      <Filter>3: Server\GameObjects Code\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Vehicles\obj_Vehicle.cpp">
+      <Filter>3: Server\GameObjects Code\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ObjectsCode\Vehicles\obj_VehicleSpawnPoint.cpp">
+      <Filter>3: Server\GameObjects Code\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameEngine\gameobjects\VehicleDescriptor.cpp">
+      <Filter>3: Server\GameObjects Code\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\multiplayer\NetCellMover.cpp">
+      <Filter>3: Server\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\GameCode\UserProfile.cpp">
+      <Filter>3: Server\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\GameCode\UserRewards.cpp">
+      <Filter>3: Server\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\Backend\WOBackendAPI.cpp">
+      <Filter>3: Server\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\XMLHelpers.cpp">
+      <Filter>3: Server\from Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ServerWeapons\ServerAmmo.cpp">
+      <Filter>3: Server\ServerWeapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ServerWeapons\ServerGear.cpp">
+      <Filter>3: Server\ServerWeapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\ServerWeapons\ServerWeapon.cpp">
+      <Filter>3: Server\ServerWeapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\BaseItemConfig.cpp">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\GearConfig.cpp">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\HeroConfig.cpp">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\WeaponArmory.cpp">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\WeaponConfig.cpp">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Backend\ServerUserProfile.cpp">
+      <Filter>3: Server\Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\Editors\CollectionElement.cpp">
+      <Filter>3: Server\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\Editors\CollectionsManager.cpp">
+      <Filter>3: Server\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\Editors\CollectionType.cpp">
+      <Filter>3: Server\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\PunkBuster\pbcl.cpp">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\PunkBuster\pbmd5.cpp">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\PunkBuster\pbsdk.cpp">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\PunkBuster\pbsv.cpp">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Eternity\SF\Console\Config.cpp">
+      <Filter>some_tempcrap</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\crap1.cpp">
+      <Filter>some_tempcrap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\EclipseStudio\Sources\DamageLib.cpp">
+      <Filter>some_tempcrap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\AObject.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\CollFunc.hpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\CollMain.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\CollMain.hpp">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\GameLevel.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\GameObj.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\obj_Mesh.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\ObjManag.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\PhysObj.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\PhysXWorld.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\sceneBox.h">
+      <Filter>1: Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\PhysXRepXHelpers.h">
+      <Filter>1: Engine\GameObjects\PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\TrueNature\ITerrain.h">
+      <Filter>1: Engine\TrueNature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\TrueNature2\Terrain2.h">
+      <Filter>1: Engine\TrueNature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\TrueNature2\Terrain3.h">
+      <Filter>1: Engine\TrueNature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\AI_Brain.h">
+      <Filter>1: Engine\GameEngine_AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\AI_Tactics.h">
+      <Filter>1: Engine\GameEngine_AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\NavGenerationHelpers.h">
+      <Filter>1: Engine\GameEngine_AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\NavRegionManager.h">
+      <Filter>1: Engine\GameEngine_AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskCustomBridges.h">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskNavAgent.h">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskNavAvoidanceFilter.h">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskNavMesh.h">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\ai\AutodeskNav\AutodeskNavProfile.h">
+      <Filter>1: Engine\GameEngine_AI\AutodeskNav</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Async_ServerObjects.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Async_ServerState.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\AsyncFuncs.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\KeepAliveReporter.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\MasterServerLogic.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\NetworkHelper.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ServerGame.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ServerGameLogic.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ServerMain.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MasterServer\Sources\SrvCrashHandler.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\TeamSpeakServer.h">
+      <Filter>3: Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Gameplay\obj_NoClipBox.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerBarricade.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerBuilding.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerDoor.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerFarmBlock.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerGravestone.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerGrenade.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerItemSpawnPoint.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerLightMesh.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerLockbox.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerMissionArea.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerNPC.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerPlayer.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerPlayerSpawnPoint.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerPostBox.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerRepairBench.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\obj_ServerUAV.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\ServerDummyObjects.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\sobj_AirDropSpawn.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\sobj_DroppedItem.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\sobj_Note.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\sobj_SpawnedItem.h">
+      <Filter>3: Server\GameObjects Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Gameplay\BaseItemSpawnPoint.h">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Gameplay\BasePlayerSpawnPoint.h">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\DebugHelpers.h">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\DecalChief.h">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\Lake.H">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\MaterialTypes.h">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\obj_Prefab.h">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Nature\obj_Terrain.H">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\PrefabManager.h">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\water.h">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WORLD\WaterPlane.H">
+      <Filter>3: Server\GameObjects Code\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Zombies\sobj_Zombie.h">
+      <Filter>3: Server\GameObjects Code\Zombies</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Zombies\sobj_ZombieSpawn.h">
+      <Filter>3: Server\GameObjects Code\Zombies</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Zombies\ZombieNavAgent.h">
+      <Filter>3: Server\GameObjects Code\Zombies</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionActions.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionActionsData.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionCommands.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionEnums.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionManager.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionProgress.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionRewards.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionTimer.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\MissionTrigger.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Missions\obj_ServerMissionStateObject.h">
+      <Filter>3: Server\GameObjects Code\Missions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\Gameplay\BaseVehicleSpawnPoint.h">
+      <Filter>3: Server\GameObjects Code\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Vehicles\obj_Vehicle.h">
+      <Filter>3: Server\GameObjects Code\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ObjectsCode\Vehicles\obj_VehicleSpawnPoint.h">
+      <Filter>3: Server\GameObjects Code\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameEngine\gameobjects\VehicleDescriptor.h">
+      <Filter>3: Server\GameObjects Code\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\multiplayer\NetCellMover.h">
+      <Filter>3: Server\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\multiplayer\P2PMessages.h">
+      <Filter>3: Server\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\GameCode\UserProfile.h">
+      <Filter>3: Server\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\GameCode\UserRewards.h">
+      <Filter>3: Server\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\Backend\WOBackendAPI.h">
+      <Filter>3: Server\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\XMLHelpers.h">
+      <Filter>3: Server\from Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ServerWeapons\ServerAmmo.h">
+      <Filter>3: Server\ServerWeapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ServerWeapons\ServerGear.h">
+      <Filter>3: Server\ServerWeapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\ServerWeapons\ServerWeapon.h">
+      <Filter>3: Server\ServerWeapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\BaseItemConfig.h">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\GearConfig.h">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\HeroConfig.h">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\WeaponArmory.h">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\ObjectsCode\WEAPONS\WeaponConfig.h">
+      <Filter>3: Server\ServerWeapons\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Backend\ServerUserProfile.h">
+      <Filter>3: Server\Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\Editors\CollectionElement.h">
+      <Filter>3: Server\collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\Editors\CollectionsManager.h">
+      <Filter>3: Server\collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\Editors\CollectionType.h">
+      <Filter>3: Server\collections</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\PunkBuster\pbcl.h">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\PunkBuster\pbcommon.h">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\PunkBuster\pbmd5.h">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\PunkBuster\pbsdk.h">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\PunkBuster\pbsv.h">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\PunkBuster\PunkBuster.h">
+      <Filter>3: Server\PunkBuster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Eternity\SF\Console\Config.h">
+      <Filter>some_tempcrap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\EclipseStudio\Sources\DamageLib.h">
+      <Filter>some_tempcrap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Eternity\SF\Console\Vars.h">
+      <Filter>some_tempcrap</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,12 +1,14 @@
 #pragma once
 
+#include <unordered_map>
+
 #include "r3dNetwork.h"
 #include "multiplayer/P2PMessages.h"
 
 #include "../../ServerNetPackets/NetPacketsGameInfo.h"
 #include "Backend/ServerUserProfile.h"
 
-#define ENABLE_GAMEBLOCKS
+// #define ENABLE_GAMEBLOCKS  // disabled for local private-server build (no GB SDK)
 
 
 class GameObject;
@@ -145,7 +147,7 @@ public:
 
 	bool		IsAdmin(DWORD CustomerID);
 
-	typedef stdext::hash_map<DWORD, float>  TKickedPlayers;
+	typedef std::unordered_map<DWORD, float>  TKickedPlayers;
 	TKickedPlayers	kickedPlayers_;
 	obj_ServerPlayer* GetPlayer(int playerIdx)
 	{

@@ -1,15 +1,16 @@
+#include <unordered_map>
 #include "r3dPCH.h"
 #include "r3d.h"
 
-#define ENABLE_TEAMSPEAK 1
+#define ENABLE_TEAMSPEAK 0
 
-#ifndef ENABLE_TEAMSPEAK
+#if !ENABLE_TEAMSPEAK
 void TSServer_Start(int port) {}
 void TSServer_Stop() {}
-DWORD TSServer_GetPassword() {}
+DWORD TSServer_GetPassword() { return 0; }
 #endif
 
-#ifdef ENABLE_TEAMSPEAK
+#if ENABLE_TEAMSPEAK
 // team speak sdk includes
 #include <public_definitions.h>
 #include <public_errors.h>
@@ -595,7 +596,7 @@ void CTeamSpeakServer::RemoveClient(int clientID)
 
 DWORD CTeamSpeakServer::GetCustomerID(int clientID)
 {
-	stdext::hash_map<int, client_s>::iterator it = m_clients.find(clientID);
+	std::unordered_map<int, client_s>::iterator it = m_clients.find(clientID);
 	r3d_assert(it != m_clients.end());
 	
 	return it->second.CustomerID;
@@ -641,4 +642,4 @@ DWORD TSServer_GetPassword()
 	return gTeamSpeakServer.m_serverPwd;
 }
 
-#endif // #ifdef ENABLE_TEAMSPEAK
+#endif // #if ENABLE_TEAMSPEAK

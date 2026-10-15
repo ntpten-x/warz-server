@@ -1,5 +1,7 @@
 #pragma once
 
+#include <unordered_map>
+
 #include "../../ServerNetPackets/NetPacketsGameInfo.h"
 
 class CMasterServerConfig
@@ -40,7 +42,7 @@ class CMasterServerConfig
 	std::vector<rentGame_s> rentGames_;
 	float		nextRentGamesCheck_;
 
-	typedef stdext::hash_map<DWORD, rentGame_s*> TRentedGamesList;
+	typedef std::unordered_map<DWORD, rentGame_s*> TRentedGamesList;
 	TRentedGamesList rentByGameServerId_;
 	
 	// number of games per region

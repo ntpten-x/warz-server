@@ -47,9 +47,9 @@ public partial class api_Login : WOApiWebPage
                 CustomerID, email, LastIP, GeoCode);
             client.Send(mail);
         }
-        catch (System.Exception ex)
+        catch (System.Exception)
         {
-            throw new ApiExitException("can't send dev login email: " + ex.Message);
+            // Local/dev: ignore mail failures so login can proceed without SMTP.
         }
     }
 

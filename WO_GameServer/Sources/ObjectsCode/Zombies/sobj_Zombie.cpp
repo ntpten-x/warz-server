@@ -1,3 +1,4 @@
+#include <unordered_set>
 #include "r3dPCH.h"
 #include "r3d.h"
 
@@ -1251,7 +1252,7 @@ bool obj_Zombie::CallForHelp(const GameObject* trg)
 	{
 		// Are there enough zombies around to make the call worthwhile?
 		uint32_t numZombies = 0;
-		std::tr1::unordered_set<uint32_t> PoiTypesSet;
+		std::unordered_set<uint32_t> PoiTypesSet;
 		PoiTypesSet.insert(AutodeskNavAgent::PoiZombie);
 		PoiTypesSet.insert(AutodeskNavAgent::PoiSuperZombie);
 		AutodeskNavAgent** pZombies = gAutodeskNavMesh.GetNavAgentsInAABB( GetPosition(), spawnObject->m_CFHExtents, PoiTypesSet, numZombies );
@@ -1886,7 +1887,7 @@ BOOL obj_Zombie::Update()
 				{
 					// Alert the nearby Zombies
 					uint32_t numZombies = 0;
-					std::tr1::unordered_set<uint32_t> PoiTypesSet;
+					std::unordered_set<uint32_t> PoiTypesSet;
 					PoiTypesSet.insert(AutodeskNavAgent::PoiZombie);
 					PoiTypesSet.insert(AutodeskNavAgent::PoiSuperZombie);
 					AutodeskNavAgent** pZombies = gAutodeskNavMesh.GetNavAgentsInAABB( GetPosition(), spawnObject->m_CFHExtents, PoiTypesSet, numZombies );

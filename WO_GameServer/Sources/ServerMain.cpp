@@ -69,7 +69,9 @@ static bool downloadLootBoxData()
 	int apiCode = job.Exec();
 	if(apiCode != 0)
 	{
-		r3dError("failed to get lootbox content %d", apiCode);
+		// Local stack often has no PHP lootbox endpoint — continue with empty loot tables.
+		r3dOutToLog("!!! failed to get lootbox content %d (continuing)\n", apiCode);
+		return true;
 	}
 	job.OnSuccess();
   

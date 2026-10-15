@@ -1,4 +1,5 @@
 #include "r3dPCH.h"
+#include "ChilkatCompat.h"
 #include "r3d.h"
 
 #include "CkHttpRequest.h"
@@ -36,7 +37,7 @@ CFileData::CFileData(const char* in_fname, bool compress)
 	{
 		// compress them
 		CkGzip gzip;
-		if(gzip.UnlockComponent("ARKTOSZIP_cRvE6e7mpSqD") == false)
+		if(Chilkat_UnlockGzip(gzip) == false)
 			r3dError("failed to unlock gzip");
 
 		CkByteData cdata;
@@ -65,8 +66,8 @@ CLogUploader::CLogUploader()
 {
 	uploadThread_ = NULL;
 
-	bool success = http_.UnlockComponent("ARKTOSHttp_decCLPWFQXmU");
-	if(!success || !http_.IsUnlocked()) {
+	bool success = Chilkat_UnlockHttp(http_);
+	if(!success) {
 		r3dError("unable to unlock http component", MB_OK);
 		return;
 	}
@@ -160,7 +161,7 @@ int CLogUploader::UploadDataToServer(CFileData& logdata, CFileData& dmpdata, CFi
 	char fullUrl[512];
 	sprintf(fullUrl, "%s%s", gDomainBaseUrl, "api_SrvUploadLogFile.aspx");
 
-	req.UseUpload();
+	req.put_HttpVerb("PUT");
 	req.put_Path(fullUrl);
 	req.AddParam("skey1", "Fg5jaBgj3uy3ja");
 
